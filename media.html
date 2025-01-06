@@ -1,0 +1,39 @@
+<!-- media.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Media Showcase</title>
+</head>
+<body>
+    <h1>About Me</h1>
+    <p>Hello! My name is Agbabiaka Omofolarin, and I am passionate about technology, problem-solving, and creating impactful solutions.</p>
+
+    <h2>Gallery</h2>
+    <picture>
+        <source srcset="image-small.jpg" media="(max-width: 600px)">
+        <source srcset="image-medium.jpg" media="(max-width: 1200px)">
+        <source srcset="image-large.jpg" media="(min-width: 1201px)">
+        <img src="image-large.jpg" alt="A representation of my journey" width="100%">
+    </picture>
+
+    <h2>Video Message</h2>
+    <video controls width="100%">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Audio Introduction</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Document</h2>
+    <p>Check out my resume for more details about my experience and skills:</p>
+    <a href="resume.pdf" download>Download Resume</a>
+</body>
+</html>
